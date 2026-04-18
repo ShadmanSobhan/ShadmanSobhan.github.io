@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Publications - Shadman Sobhan</title>
-  <!-- External Styles (Match index.html) -->
   <link href="https://cdn.replit.com/agent/bootstrap-agent-dark-theme.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <link href="./style.css" rel="stylesheet">
@@ -58,14 +57,126 @@
       </div>
     </div>
 
-    <!-- Published Papers Section -->
+    <!-- ============================================================ -->
+    <!-- SECTION 1: Journal Publications                              -->
+    <!-- ============================================================ -->
     <div class="row mb-5">
       <div class="col-12">
         <h2 class="mb-4">
-          <i class="fas fa-medal text-success me-3"></i>Published & Accepted Papers
+          <i class="fas fa-book-open text-warning me-3"></i>Journal Publications
         </h2>
 
-        <!-- Publication Item 1 -->
+        <!-- Journal 1: MedPrompt -->
+        <div class="card mb-4 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-10">
+                <h5 class="card-title mb-2">MedPrompt: LLM-CNN Fusion with Weight Routing for Medical Image Segmentation and Classification</h5>
+                <p class="card-text text-primary mb-2">
+                  <strong>Authors:</strong> Shadman Sobhan et al.
+                </p>
+                <p class="card-text text-secondary mb-2">
+                  <strong>Journal:</strong> Biomedical Signal Processing and Control
+                  <span class="badge bg-warning text-dark ms-2">Q1</span>
+                  <span class="badge bg-secondary ms-1">IF 4.9</span>
+                </p>
+                <p class="card-text">
+                  Medical image analysis often demands the simultaneous handling of multiple tasks — segmentation and classification — 
+                  across diverse imaging modalities. This paper introduces MedPrompt, a unified framework that synergizes a few-shot 
+                  prompted Large Language Model for high-level task planning with a modular Convolutional Neural Network (DeepFusionLab) 
+                  for low-level image processing.
+                </p>
+                <p class="card-text">
+                  The core innovation lies in a dynamic weight routing mechanism: the LLM interprets a natural language prompt 
+                  to select and configure the appropriate CNN pathway, enabling a single model to flexibly perform segmentation 
+                  or classification without retraining. This fusion of symbolic reasoning and deep feature extraction achieves 
+                  strong performance across multiple benchmark datasets, demonstrating that bridging language and vision models 
+                  can yield clinically practical, adaptable AI systems.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <span class="badge bg-success">Published</span>
+                  <span class="badge bg-secondary">Medical Imaging</span>
+                  <span class="badge bg-secondary">LLM-CNN Fusion</span>
+                  <span class="badge bg-secondary">Weight Routing</span>
+                  <span class="badge bg-secondary">Segmentation</span>
+                </div>
+              </div>
+              <div class="col-md-2 text-md-end mt-3 mt-md-0">
+                <div class="mb-2">
+                  <span class="badge bg-primary fs-6">2025</span>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                  <a href="https://arxiv.org/abs/2506.21199" class="btn btn-sm btn-outline-warning" target="_blank">
+                    <i class="fas fa-external-link-alt me-1"></i>arXiv
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Journal 2: UltraLightCPS -->
+        <div class="card mb-4 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-10">
+                <h5 class="card-title mb-2">UltraLightCPS: An Ultra-Lightweight Colon Polyp Segmentation Model using Adaptive Compressed Multi-Scale Semantic Fusion Mechanism</h5>
+                <p class="card-text text-primary mb-2">
+                  <strong>Authors:</strong> Abduz Zami, Shadman Sobhan et al.
+                </p>
+                <p class="card-text text-secondary mb-2">
+                  <strong>Journal:</strong> Biomedical Signal Processing and Control
+                  <span class="badge bg-warning text-dark ms-2">Q1</span>
+                  <span class="badge bg-secondary ms-1">IF 4.9</span>
+                </p>
+                <p class="card-text">
+                  Early and accurate detection of colon polyps is critical in preventing colorectal cancer, yet deploying 
+                  deep learning models in clinical environments remains challenging due to computational constraints. 
+                  This paper introduces UltraLightCPS, a novel segmentation architecture built around an Adaptive Compressed 
+                  Multi-Scale Semantic Fusion (ACMSSF) mechanism, designed to capture rich multi-scale contextual features 
+                  while operating at extreme parameter efficiency — achieving competitive accuracy with only 0.23M parameters.
+                </p>
+                <p class="card-text">
+                  By compressing and fusing semantic information across multiple receptive fields adaptively, UltraLightCPS 
+                  maintains high segmentation fidelity on standard polyp benchmarks while remaining deployable on 
+                  resource-constrained hardware. This work advances the frontier of lightweight medical image segmentation, 
+                  making AI-assisted colonoscopy analysis more accessible in low-resource healthcare settings.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <span class="badge bg-success">Published</span>
+                  <span class="badge bg-secondary">Medical Imaging</span>
+                  <span class="badge bg-secondary">Lightweight Model</span>
+                  <span class="badge bg-secondary">Polyp Segmentation</span>
+                  <span class="badge bg-secondary">Semantic Fusion</span>
+                </div>
+              </div>
+              <div class="col-md-2 text-md-end mt-3 mt-md-0">
+                <div class="mb-2">
+                  <span class="badge bg-primary fs-6">2025</span>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                  <span class="btn btn-sm btn-outline-secondary disabled">
+                    <i class="fas fa-check me-1"></i>Published
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ============================================================ -->
+    <!-- SECTION 2: Conference Proceedings                            -->
+    <!-- ============================================================ -->
+    <div class="row mb-5">
+      <div class="col-12">
+        <h2 class="mb-4">
+          <i class="fas fa-medal text-success me-3"></i>Conference Proceedings
+        </h2>
+
+        <!-- Conference 1: Tuberculosis -->
         <div class="card mb-4 border-0 shadow-sm">
           <div class="card-body">
             <div class="row">
@@ -75,16 +186,24 @@
                   <strong>Authors:</strong> Shadman Sobhan et al.
                 </p>
                 <p class="card-text text-secondary mb-2">
-                  <strong>Conference:</strong> NCIM 2025 (Dhaka)
+                  <strong>Conference:</strong> NCIM 2025 (Dhaka) &nbsp;|&nbsp;
+                  <strong>Publisher:</strong> IEEE Xplore
                 </p>
                 <p class="card-text">
-                  We present an AI-powered solution that integrates segmentation, 
-                  classification, and explainability. Our approach utilizes UNet++ 
-                  for precise lung region segmentation, which improves the accuracy 
-                  of subsequent classification.
+                  Tuberculosis (TB) remains one of the leading infectious disease killers globally, and reliable automated 
+                  detection from chest X-rays could significantly aid resource-limited health systems. This work presents 
+                  a multi-stage pipeline combining UNet++ for precise lung region segmentation with a downstream 
+                  classification model, ensuring that the classifier focuses on diagnostically relevant anatomy.
+                </p>
+                <p class="card-text">
+                  A central contribution is the integration of Explainable AI (XAI) techniques — specifically saliency 
+                  maps and Grad-CAM visualizations — that highlight which regions of the X-ray most influenced the 
+                  model's prediction. This transparency is essential for clinical adoption, allowing radiologists to 
+                  audit and trust the model's decision-making process rather than treating it as a black box.
                 </p>
                 <div class="d-flex flex-wrap gap-2 mt-3">
-                  <span class="badge bg-success">Accepted</span>
+                  <span class="badge bg-success">Published</span>
+                  <span class="badge bg-dark">IEEE Xplore</span>
                   <span class="badge bg-secondary">Medical Imaging</span>
                   <span class="badge bg-secondary">Deep Learning</span>
                   <span class="badge bg-secondary">XAI</span>
@@ -94,17 +213,12 @@
                 <div class="mb-2">
                   <span class="badge bg-primary fs-6">2025</span>
                 </div>
-                <div class="d-flex flex-column gap-2">
-                  <span class="btn btn-sm btn-outline-primary disabled">
-                    <i class="fas fa-clock me-1"></i>In Press
-                  </span>
-                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Publication Item 2 -->
+        <!-- Conference 2: Skin Cancer -->
         <div class="card mb-4 border-0 shadow-sm">
           <div class="card-body">
             <div class="row">
@@ -114,15 +228,25 @@
                   <strong>Authors:</strong> Shadman Sobhan et al.
                 </p>
                 <p class="card-text text-secondary mb-2">
-                  <strong>Conference:</strong> NCIM 2025 (Dhaka)
+                  <strong>Conference:</strong> NCIM 2025 (Dhaka) &nbsp;|&nbsp;
+                  <strong>Publisher:</strong> IEEE Xplore
                 </p>
                 <p class="card-text">
-                  Our proposed method leverages transfer learning from pre-trained 
-                  convolutional neural networks (CNNs) and employs advanced data augmentation 
-                  techniques to address the challenges posed by limited and imbalanced labeled data.
+                  Skin cancer classification from dermoscopic images is complicated by severe class imbalance — benign 
+                  lesions vastly outnumber malignant ones in clinical datasets — which leads to biased models that 
+                  underperform on the minority classes that matter most. This paper leverages transfer learning from 
+                  pre-trained CNNs (including VGG, ResNet, and EfficientNet variants) combined with advanced data 
+                  augmentation strategies to effectively counter this imbalance.
+                </p>
+                <p class="card-text">
+                  Through systematic evaluation of multiple architectures, the study identifies optimal fine-tuning 
+                  strategies that maximize sensitivity on rare malignant classes without sacrificing overall accuracy. 
+                  The findings provide a practical recipe for practitioners adapting large-scale vision models to 
+                  small, imbalanced medical datasets, a challenge common across dermatology and oncology AI.
                 </p>
                 <div class="d-flex flex-wrap gap-2 mt-3">
-                  <span class="badge bg-success">Accepted</span>
+                  <span class="badge bg-success">Published</span>
+                  <span class="badge bg-dark">IEEE Xplore</span>
                   <span class="badge bg-secondary">Computer Vision</span>
                   <span class="badge bg-secondary">Transfer Learning</span>
                   <span class="badge bg-secondary">Medical AI</span>
@@ -132,17 +256,55 @@
                 <div class="mb-2">
                   <span class="badge bg-primary fs-6">2025</span>
                 </div>
-                <div class="d-flex flex-column gap-2">
-                  <span class="btn btn-sm btn-outline-primary disabled">
-                    <i class="fas fa-clock me-1"></i>In Press
-                  </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Conference 3: TIG-UNet++ -->
+        <div class="card mb-4 border-0 shadow-sm">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-10">
+                <h5 class="card-title mb-2">TIG-UNet++: A Thresholded Input Guided Modified UNet++ for Separating Lung Region in Chest X-Rays</h5>
+                <p class="card-text text-primary mb-2">
+                  <strong>Authors:</strong> Abduz Zami, Shadman Sobhan et al.
+                </p>
+                <p class="card-text text-secondary mb-2">
+                  <strong>Conference:</strong> ICTIS 2025 (Bangkok, Thailand) &nbsp;|&nbsp;
+                  <strong>Publisher:</strong> Springer Nature
+                </p>
+                <p class="card-text">
+                  Accurate lung segmentation from chest X-rays is a fundamental preprocessing step for many 
+                  downstream diagnostic AI systems. This paper proposes TIG-UNet++, an enhanced modification of the 
+                  UNet++-L4 architecture that incorporates a thresholded version of the input image as a late-stage 
+                  guide, injecting structural prior information directly into the decoding pathway.
+                </p>
+                <p class="card-text">
+                  By introducing the thresholded input at a strategically chosen layer rather than at the network 
+                  entry, the model preserves learned deep features while benefiting from the coarse boundary 
+                  information provided by the threshold. Experiments on standard chest X-ray segmentation benchmarks 
+                  demonstrate improved delineation of lung boundaries, particularly in pathological cases where 
+                  opacity or consolidation obscures normal tissue contrast.
+                </p>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                  <span class="badge bg-success">Published</span>
+                  <span class="badge bg-dark">Springer Nature</span>
+                  <span class="badge bg-secondary">Medical Imaging</span>
+                  <span class="badge bg-secondary">Segmentation</span>
+                  <span class="badge bg-secondary">UNet++</span>
+                </div>
+              </div>
+              <div class="col-md-2 text-md-end mt-3 mt-md-0">
+                <div class="mb-2">
+                  <span class="badge bg-primary fs-6">2025</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Publication Item 3 -->
+        <!-- Conference 4: Facial Emotion -->
         <div class="card mb-4 border-0 shadow-sm">
           <div class="card-body">
             <div class="row">
@@ -155,11 +317,20 @@
                   <strong>Conference:</strong> NCIM 2025 (Dhaka)
                 </p>
                 <p class="card-text">
-                  We present a novel multimodal deep learning architecture, that takes advantage of both geometric (landmark-based) 
-                  and spatial pixel-wise (image-based) features for robust emotion classification.
+                  Facial emotion recognition in the wild is challenged by variations in lighting, pose, and occlusion 
+                  that degrade purely appearance-based models. This paper introduces a multimodal deep learning 
+                  architecture that fuses landmark-based geometric features — encoding the structural relationships 
+                  between facial keypoints — with spatial pixel-level features extracted by a CNN backbone.
+                </p>
+                <p class="card-text">
+                  The geometric stream provides pose-invariant structural cues while the spatial stream captures 
+                  texture and appearance details; their fusion yields a complementary representation more robust 
+                  than either modality alone. The framework is deliberately lightweight, making it suitable for 
+                  real-time deployment on edge devices, with competitive accuracy across standard emotion 
+                  recognition benchmarks.
                 </p>
                 <div class="d-flex flex-wrap gap-2 mt-3">
-                  <span class="badge bg-success">Accepted</span>
+                  <span class="badge bg-success">Published</span>
                   <span class="badge bg-secondary">Computer Vision</span>
                   <span class="badge bg-secondary">Emotion Recognition</span>
                   <span class="badge bg-secondary">Lightweight Model</span>
@@ -169,56 +340,17 @@
                 <div class="mb-2">
                   <span class="badge bg-primary fs-6">2025</span>
                 </div>
-                <div class="d-flex flex-column gap-2">
-                  <span class="btn btn-sm btn-outline-primary disabled">
-                    <i class="fas fa-clock me-1"></i>In Press
-                  </span>
-                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Publication Item 4 -->
-        <div class="card mb-4 border-0 shadow-sm">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-10">
-                <h5 class="card-title mb-2">TIG-UNet++: A Thresholded Input Guided Modified UNet++ for Separating Lung Region in Chest X-Rays</h5>
-                <p class="card-text text-primary mb-2">
-                  <strong>Authors:</strong> Abduz Zami, Shadman Sobhan et al.
-                </p>
-                <p class="card-text text-secondary mb-2">
-                  <strong>Conference:</strong> ICTIS 2025 (Bangkok, Thailand)
-                </p>
-                <p class="card-text">
-                  This paper proposes the TIG-UNet++ model, an advanced modification of the Unet++-L4 architecture. 
-                  A key feature of our model is the late introduction of a threshold image.
-                </p>
-                <div class="d-flex flex-wrap gap-2 mt-3">
-                  <span class="badge bg-success">Accepted</span>
-                  <span class="badge bg-secondary">Medical Imaging</span>
-                  <span class="badge bg-secondary">Segmentation</span>
-                  <span class="badge bg-secondary">UNet++</span>
-                </div>
-              </div>
-              <div class="col-md-2 text-md-end mt-3 mt-md-0">
-                <div class="mb-2">
-                  <span class="badge bg-primary fs-6">2025</span>
-                </div>
-                <div class="d-flex flex-column gap-2">
-                  <span class="btn btn-sm btn-outline-primary disabled">
-                    <i class="fas fa-clock me-1"></i>In Press
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
 
-    <!-- Preprints & Under Review Section -->
+    <!-- ============================================================ -->
+    <!-- SECTION 3: Preprints & Under Review                          -->
+    <!-- ============================================================ -->
     <div class="row">
       <div class="col-12">
         <div class="alert alert-info mb-4" role="alert">
@@ -226,7 +358,7 @@
           <p class="mb-0">Research works available as preprints or currently under peer review at various venues.</p>
         </div>
 
-        <!-- Preprint 1 -->
+        <!-- Preprint 1: RAG Thesis -->
         <div class="card mb-4 border-0 shadow-sm bg-body-secondary">
           <div class="card-body">
             <div class="row">
@@ -236,21 +368,33 @@
                   <strong>Authors:</strong> Shadman Sobhan (Undergraduate Thesis)
                 </p>
                 <p class="card-text text-secondary mb-2">
-                  <strong>Supervisor:</strong> Dr. Mohammad Ariful Haque
+                  <strong>Supervisor:</strong> Dr. Mohammad Ariful Haque &nbsp;|&nbsp; <strong>Status:</strong> Preprint (arXiv)
                 </p>
                 <p class="card-text">
-                  In this work, we propose a RAG pipeline, capable of handling tables and images in documents, for technical documents that support both scanned and searchable formats.
+                  Standard Retrieval-Augmented Generation (RAG) systems excel at plain-text retrieval but struggle 
+                  with technical documents that contain structured data — tables, figures, equations, and mixed 
+                  scanned-and-digital formats common in engineering and scientific literature. This undergraduate 
+                  thesis proposes a structure-aware RAG pipeline that explicitly handles these heterogeneous 
+                  document elements, extracting and indexing tables and images alongside text for holistic retrieval.
+                </p>
+                <p class="card-text">
+                  The pipeline supports both searchable and scanned PDF formats through integrated OCR, and 
+                  routes queries to the most appropriate retrieval modality based on inferred question type. 
+                  When paired with a large language model, the system produces accurate, grounded answers 
+                  to complex technical questions that would defeat naive chunk-based RAG approaches, 
+                  demonstrating strong performance on domain-specific engineering document corpora.
                 </p>
                 <div class="d-flex flex-wrap gap-2 mt-3">
                   <span class="badge bg-warning text-dark">Preprint</span>
                   <span class="badge bg-secondary">NLP</span>
                   <span class="badge bg-secondary">RAG</span>
                   <span class="badge bg-secondary">LLM</span>
+                  <span class="badge bg-secondary">Document AI</span>
                 </div>
               </div>
               <div class="col-md-2 text-md-end mt-3 mt-md-0">
                 <div class="mb-2">
-                  <span class="badge bg-warning fs-6">arXiv</span>
+                  <span class="badge bg-warning text-dark fs-6">arXiv</span>
                 </div>
                 <div class="d-flex flex-column gap-2">
                   <a href="https://arxiv.org/abs/2506.23136" class="btn btn-sm btn-outline-warning" target="_blank">
@@ -262,45 +406,7 @@
           </div>
         </div>
 
-        <!-- Preprint 2 -->
-        <div class="card mb-4 border-0 shadow-sm bg-body-secondary">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-10">
-                <h5 class="card-title mb-2">MedPrompt: LLM-CNN Fusion with Weight Routing for Medical Image Segmentation and Classification</h5>
-                <p class="card-text text-primary mb-2">
-                  <strong>Authors:</strong> Shadman Sobhan et al.
-                </p>
-                <p class="card-text text-secondary mb-2">
-                  <strong>Status:</strong> Preprint available at arXiv
-                </p>
-                <p class="card-text">
-                  We introduced MedPrompt, a unified framework that combines a few-shot prompted Large Language Model 
-                  for high-level task planning with a modular Convolutional Neural Network (DeepFusionLab) for low-level 
-                  image processing.
-                </p>
-                <div class="d-flex flex-wrap gap-2 mt-3">
-                  <span class="badge bg-warning text-dark">Preprint</span>
-                  <span class="badge bg-secondary">Medical Imaging</span>
-                  <span class="badge bg-secondary">LLM-CNN Fusion</span>
-                  <span class="badge bg-secondary">Weight Routing</span>
-                </div>
-              </div>
-              <div class="col-md-2 text-md-end mt-3 mt-md-0">
-                <div class="mb-2">
-                  <span class="badge bg-warning fs-6">arXiv</span>
-                </div>
-                <div class="d-flex flex-column gap-2">
-                  <a href="https://arxiv.org/abs/2506.21199" class="btn btn-sm btn-outline-warning" target="_blank">
-                    <i class="fas fa-external-link-alt me-1"></i>arXiv
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Preprint 3 -->
+        <!-- Under Review 1: Prompt2SegCXR -->
         <div class="card mb-4 border-0 shadow-sm bg-body-secondary">
           <div class="card-body">
             <div class="row">
@@ -310,24 +416,33 @@
                   <strong>Authors:</strong> Abduz Zami, Shadman Sobhan et al.
                 </p>
                 <p class="card-text text-secondary mb-2">
-                  <strong>Status:</strong> Preprint available at arXiv | Dataset on Mendeley
+                  <strong>Journal:</strong> Heliyon &nbsp;|&nbsp; <strong>Status:</strong> Under Revision &nbsp;|&nbsp; Dataset on Mendeley
                 </p>
                 <p class="card-text">
-                  This work introduces (1) a collection of expert-generated doodle prompts across 23 classes 
-                  (6 organs and 17 diseases) from diverse datasets for prompt-based Chest X-ray segmentation, 
-                  and (2) Prompt2SegCXR, a lightweight model for accurate multi-class organ and disease segmentation
-                  in Chest X-rays.
+                  Chest X-ray interpretation encompasses a wide range of pathologies and anatomical structures, 
+                  yet most segmentation models are trained for a single target. This work introduces Prompt2SegCXR, 
+                  a lightweight prompt-driven model capable of segmenting all 23 classes — 6 organs and 17 diseases 
+                  — in a single unified architecture. Crucially, the paper also contributes a novel dataset of 
+                  expert-generated doodle prompts designed to guide the model toward user-specified targets.
+                </p>
+                <p class="card-text">
+                  The doodle prompt paradigm enables intuitive, interactive segmentation: clinicians can sketch 
+                  a rough region of interest and the model refines it into a precise mask. This is a significant 
+                  step toward human-in-the-loop radiology AI, combining the flexibility of prompt-based interaction 
+                  with the breadth of multi-class disease coverage. The dataset is publicly available on Mendeley, 
+                  and a preprint is available on arXiv.
                 </p>
                 <div class="d-flex flex-wrap gap-2 mt-3">
-                  <span class="badge bg-warning text-dark">Preprint</span>
+                  <span class="badge bg-info">Under Revision</span>
                   <span class="badge bg-secondary">Medical Imaging</span>
                   <span class="badge bg-secondary">Prompt Engineering</span>
                   <span class="badge bg-secondary">Dataset</span>
+                  <span class="badge bg-secondary">CXR Segmentation</span>
                 </div>
               </div>
               <div class="col-md-2 text-md-end mt-3 mt-md-0">
                 <div class="mb-2">
-                  <span class="badge bg-warning fs-6">arXiv</span>
+                  <span class="badge bg-info fs-6">Heliyon</span>
                 </div>
                 <div class="d-flex flex-column gap-2">
                   <a href="https://arxiv.org/abs/2507.00673" class="btn btn-sm btn-outline-warning" target="_blank">
@@ -342,8 +457,8 @@
           </div>
         </div>
 
-        <!-- Under Review 1 -->
-        <div class="card mb-4 border-0 shadow-sm">
+        <!-- Under Review 2: DeepColonLab -->
+        <div class="card mb-4 border-0 shadow-sm bg-body-secondary">
           <div class="card-body">
             <div class="row">
               <div class="col-md-10">
@@ -352,16 +467,28 @@
                   <strong>Authors:</strong> Abduz Zami, Shadman Sobhan et al.
                 </p>
                 <p class="card-text text-secondary mb-2">
-                  <strong>Status:</strong> Under Review | Preprint available at preprints.org
+                  <strong>Status:</strong> Under Review &nbsp;|&nbsp; Preprint available at preprints.org
                 </p>
                 <p class="card-text">
-                  We introduced DeepColonLab, a modification of the DeepLabV3+ model, specially designed for colon polyp segmentation.
+                  DeepLabV3+ is a well-established semantic segmentation architecture, but its application to 
+                  colon polyp segmentation is limited by its inability to model fine-grained local boundary 
+                  information crucial for irregular polyp shapes. This paper introduces DeepColonLab, which 
+                  enhances DeepLabV3+ with an Attention-Guided Separable Receptive Field Block that selectively 
+                  focuses the network on polyp boundary regions at multiple scales.
+                </p>
+                <p class="card-text">
+                  The separable receptive field design reduces computational overhead while expanding the 
+                  effective context window, and the attention guidance ensures that boundary-critical features 
+                  are amplified throughout the encoding process. Evaluated on standard polyp segmentation 
+                  benchmarks, DeepColonLab demonstrates improved Dice scores and boundary accuracy compared 
+                  to the vanilla DeepLabV3+ baseline and competitive lightweight alternatives.
                 </p>
                 <div class="d-flex flex-wrap gap-2 mt-3">
                   <span class="badge bg-info">Under Review</span>
                   <span class="badge bg-secondary">Medical Imaging</span>
                   <span class="badge bg-secondary">Attention Mechanism</span>
                   <span class="badge bg-secondary">DeepLab</span>
+                  <span class="badge bg-secondary">Polyp Segmentation</span>
                 </div>
               </div>
               <div class="col-md-2 text-md-end mt-3 mt-md-0">
@@ -378,48 +505,12 @@
           </div>
         </div>
 
-        <!-- Under Review 2 -->
-        <div class="card mb-4 border-0 shadow-sm">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-10">
-                <h5 class="card-title mb-2">UltraLightCPS: An Ultra-Lightweight Colon Polyp Segmentation Model using Adaptive Compressed Multi-Scale Semantic Fusion Mechanism</h5>
-                <p class="card-text text-primary mb-2">
-                  <strong>Authors:</strong> Abduz Zami, Shadman Sobhan et al.
-                </p>
-                <p class="card-text text-secondary mb-2">
-                  <strong>Status:</strong> Under Review
-                </p>
-                <p class="card-text">
-                  This research introduces UltraLightCPS, a novel colon polyp segmentation model designed to achieve 
-                  high segmentation accuracy with extreme computational efficiency with only 0.23M parameters.
-                </p>
-                <div class="d-flex flex-wrap gap-2 mt-3">
-                  <span class="badge bg-info">Under Review</span>
-                  <span class="badge bg-secondary">Medical Imaging</span>
-                  <span class="badge bg-secondary">Lightweight Model</span>
-                  <span class="badge bg-secondary">Semantic Fusion</span>
-                </div>
-              </div>
-              <div class="col-md-2 text-md-end mt-3 mt-md-0">
-                <div class="mb-2">
-                  <span class="badge bg-info fs-6">Review</span>
-                </div>
-                <div class="d-flex flex-column gap-2">
-                  <span class="btn btn-sm btn-outline-secondary disabled">
-                    <i class="fas fa-clock me-1"></i>Pending
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </div>
 
   <!-- Footer -->
-  <footer class="bg-dark text-light py-4">
+  <footer class="bg-dark text-light py-4 mt-5">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
@@ -432,7 +523,6 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./main.js"></script>
 </body>
