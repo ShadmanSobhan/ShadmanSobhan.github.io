@@ -81,17 +81,11 @@
                   <span class="badge bg-secondary ms-1">IF 5.7</span>
                 </p>
                 <p class="card-text">
-                  Medical image analysis often demands the simultaneous handling of multiple tasks — segmentation and classification — 
-                  across diverse imaging modalities. This paper introduces MedPrompt, a unified framework that synergizes a few-shot 
-                  prompted Large Language Model for high-level task planning with a modular Convolutional Neural Network (DeepFusionLab) 
-                  for low-level image processing.
-                </p>
-                <p class="card-text">
-                  The core innovation lies in a dynamic weight routing mechanism: the LLM interprets a natural language prompt 
-                  to select and configure the appropriate CNN pathway, enabling a single model to flexibly perform segmentation 
-                  or classification without retraining. This fusion of symbolic reasoning and deep feature extraction achieves 
-                  strong performance across multiple benchmark datasets, demonstrating that bridging language and vision models 
-                  can yield clinically practical, adaptable AI systems.
+                MedPrompt combines a few-shot-prompted Large Language Model (LLM) with a modular Convolutional Neural Network (DeepFusionLab). The user provides an image along with a text prompt 
+                describing the desired task. Based on the prompt, the LLM determines whether the CNN should operate in classification or segmentation mode and selects the corresponding task-specific 
+                model weights. This process of selecting the appropriate model weights is referred to as “Weight Routing.” This architecture offers several advantages. Since task-specific weights 
+                are trained separately and loaded according to the requested task, new classification or segmentation tasks can be incorporated without retraining the entire model from scratch. 
+                Furthermore, using task-specific weights allows the model to be optimized for each individual task, potentially providing better performance than using a single set of general-purpose weights.            
                 </p>
                 <div class="d-flex flex-wrap gap-2 mt-3">
                   <span class="badge bg-success">Published</span>
@@ -130,17 +124,10 @@
                   <span class="badge bg-secondary ms-1">IF 5.7</span>
                 </p>
                 <p class="card-text">
-                  Early and accurate detection of colon polyps is critical in preventing colorectal cancer, yet deploying 
-                  Deep learning models in clinical environments remain challenging due to computational constraints. 
-                  This paper introduces UltraLightCPS, a novel segmentation architecture built around an Adaptive Compressed 
-                  Multi-Scale Semantic Fusion mechanism, designed to capture rich multi-scale contextual features 
-                  while operating at extreme parameter efficiency — achieving competitive accuracy with only 0.23M parameters.
-                </p>
-                <p class="card-text">
-                  By compressing and fusing semantic information across multiple receptive fields adaptively, UltraLightCPS 
-                  maintains high segmentation fidelity on standard polyp benchmarks while remaining deployable on 
-                  resource-constrained hardware. This work advances the frontier of lightweight medical image segmentation, 
-                  making AI-assisted colonoscopy analysis more accessible in low-resource healthcare settings.
+                UltraLightCPS is an ultra-lightweight deep learning model designed for colon polyp segmentation in colonoscopy images. It uses an efficient encoder 
+                based on depthwise separable convolutions and an adaptive compressed multi-scale semantic fusion mechanism to capture polyp features at different 
+                scales. Its decoder combines high-level semantic information with low-level spatial details to produce accurate segmentation masks, including irregular 
+                polyp boundaries.
                 </p>
                 <div class="d-flex flex-wrap gap-2 mt-3">
                   <span class="badge bg-success">Published</span>
@@ -189,16 +176,9 @@
                   <strong>Publisher:</strong> IEEE Xplore
                 </p>
                 <p class="card-text">
-                  Tuberculosis (TB) remains one of the leading infectious disease killers globally, and reliable automated 
-                  detection from chest X-rays could significantly aid resource-limited health systems. This work presents 
-                  a multi-stage pipeline combining segmentation for precise lung region segmentation with a downstream 
-                  classification model, ensuring that the classifier focuses on diagnostically relevant anatomy.
-                </p>
-                <p class="card-text">
-                  A central contribution is the integration of Explainable AI (XAI) techniques — specifically SHAP
-                  and Grad-CAM visualizations — that highlight which regions of the X-ray most influenced the 
-                  model's prediction. This transparency is essential for clinical adoption, allowing radiologists to 
-                  audit and trust the model's decision-making process rather than treating it as a black box.
+                This paper presents a tuberculosis detection framework that combines lung segmentation, classification of segmented lungs, and the application of explainable AI. 
+                Initially, UNet++ is applied to segment the lung regions in chest X-rays before applying EfficientNetB0 for tuberculosis classification. To include interpretability 
+                of its predictions, LIME, SHAP, and Grad-CAM were applied. 
                 </p>
                 <div class="d-flex flex-wrap gap-2 mt-3">
                   <span class="badge bg-success">Published</span>
@@ -235,17 +215,9 @@
                   <strong>Publisher:</strong> IEEE Xplore
                 </p>
                 <p class="card-text">
-                  Skin cancer classification from dermoscopic images is complicated by severe class imbalance — benign 
-                  lesions vastly outnumber malignant ones in clinical datasets — which leads to biased models that 
-                  underperform on the minority classes that matter most. This paper leverages transfer learning from 
-                  pre-trained CNNs combined with advanced data 
-                  augmentation strategies to effectively counter this imbalance.
-                </p>
-                <p class="card-text">
-                  Through systematic evaluation of multiple architectures, the study identifies optimal strategies 
-                  that maximizes sensitivity on rare malignant classes without sacrificing overall accuracy. 
-                  The findings provide a practical recipe for practitioners adapting large-scale vision models to 
-                  small, imbalanced medical datasets, a challenge common across dermatology and oncology AI.
+                  Skin cancer classification from dermoscopic images is complicated by severe class imbalance; such as, benign lesions vastly outnumber malignant ones 
+                  in clinical datasets. This leads to biased models that underperform on the minority classes that matter most. This paper leverages transfer learning from 
+                  pre-trained CNNs combined with advanced data augmentation strategies to effectively counter this imbalance.
                 </p>
                 <div class="d-flex flex-wrap gap-2 mt-3">
                   <span class="badge bg-success">Published</span>
@@ -282,17 +254,10 @@
                   <strong>Publisher:</strong> Springer Nature
                 </p>
                 <p class="card-text">
-                  Accurate lung segmentation from chest X-rays is a fundamental preprocessing step for many 
-                  downstream diagnostic AI systems. This paper proposes TIG-UNet++, an enhanced modification of the 
-                  UNet++-L4 architecture that incorporates a thresholded version of the input image as a late-stage 
-                  guide, injecting structural prior information directly into the decoding pathway.
-                </p>
-                <p class="card-text">
-                  By introducing the thresholded input at a strategically chosen layer rather than at the network 
-                  entry, the model preserves learned deep features while benefiting from the coarse boundary 
-                  information provided by the threshold. Experiments on standard chest X-ray segmentation benchmarks 
-                  demonstrate improved delineation of lung boundaries, particularly in pathological cases where 
-                  opacity or consolidation obscures normal tissue contrast.
+                This paper proposes TIG-UNet++, a modified variant of the UNet++-L4 architecture that incorporates a thresholded version of the 
+                input image as a late-stage guide, injecting structural prior information directly into the decoding pathway. By introducing the 
+                thresholded input at a strategically chosen layer rather than at the network entry, the model preserves learned deep features while 
+                benefiting from the coarse boundary information provided by the threshold. 
                 </p>
                 <div class="d-flex flex-wrap gap-2 mt-3">
                   <span class="badge bg-success">Published</span>
@@ -329,17 +294,10 @@
                   <strong>Publisher:</strong> IEEE Xplore
                 </p>
                 <p class="card-text">
-                  Facial emotion recognition in the wild is challenged by variations in lighting, pose, and occlusion 
-                  that degrade purely appearance-based models. This paper introduces a multimodal deep learning 
-                  architecture that fuses landmark-based geometric features — encoding the structural relationships 
-                  between facial keypoints — with spatial pixel-level features extracted by a CNN backbone.
-                </p>
-                <p class="card-text">
-                  The geometric stream provides pose-invariant structural cues, while the spatial stream captures 
-                  texture and appearance details; their fusion yields a complementary representation more robust 
-                  than either modality alone. The framework is deliberately lightweight, making it suitable for 
-                  real-time deployment on edge devices, with competitive accuracy across standard emotion 
-                  recognition benchmarks.
+                  Facial emotion recognition is challenged by variations in lighting, pose, and occlusion that degrade purely 
+                  appearance-based models. This paper introduces a multimodal deep learning architecture that fuses landmark-based 
+                  geometric features — encoding the structural relationships between facial keypoints — with spatial pixel-level features 
+                  extracted by a CNN backbone.
                 </p>
                 <div class="d-flex flex-wrap gap-2 mt-3">
                   <span class="badge bg-success">Published</span>
@@ -422,106 +380,6 @@
             </div>
           </div>
         </div>
-
-        <!-- Under Review 1: Prompt2SegCXR -->
-        <div class="card mb-4 border-0 shadow-sm bg-body-secondary">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-10">
-                <h5 class="card-title mb-2">Prompt2SegCXR: Prompt to Segment All Organs and Diseases in Chest X-rays</h5>
-                <p class="card-text text-primary mb-2">
-                  <strong>Authors:</strong> Abduz Zami, <strong>Shadman Sobhan</strong> et al.
-                </p>
-                <p class="card-text text-secondary mb-2">
-                  <strong>Journal:</strong> Heliyon &nbsp;|&nbsp; <strong>Status:</strong> Under Revision &nbsp;|&nbsp; Dataset on Mendeley
-                </p>
-                <p class="card-text">
-                  Chest X-ray interpretation encompasses a wide range of pathologies and anatomical structures, 
-                  yet most segmentation models are trained for a single target. This work introduces Prompt2SegCXR, 
-                  a lightweight prompt-driven model capable of segmenting all 23 classes — 6 organs and 17 diseases 
-                  — in a single unified architecture. Crucially, the paper also contributes a novel dataset of 
-                  expert-generated doodle prompts designed to guide the model toward user-specified targets.
-                </p>
-                <p class="card-text">
-                  The doodle prompt paradigm enables intuitive, interactive segmentation: clinicians can sketch 
-                  a rough region of interest, and the model refines it into a precise mask. This is a significant 
-                  step toward human-in-the-loop radiology AI, combining the flexibility of prompt-based interaction 
-                  with the breadth of multi-class disease coverage. The dataset is publicly available on Mendeley, 
-                  and a preprint is available on arXiv.
-                </p>
-                <div class="d-flex flex-wrap gap-2 mt-3">
-                  <span class="badge bg-info">Under Revision</span>
-                  <span class="badge bg-secondary">Medical Imaging</span>
-                  <span class="badge bg-secondary">Prompt Engineering</span>
-                  <span class="badge bg-secondary">Dataset</span>
-                  <span class="badge bg-secondary">CXR Segmentation</span>
-                </div>
-              </div>
-              <div class="col-md-2 text-md-end mt-3 mt-md-0">
-                <div class="mb-2">
-                  <span class="badge bg-info fs-6">Heliyon</span>
-                </div>
-                <div class="d-flex flex-column gap-2">
-                  <a href="https://arxiv.org/abs/2507.00673" class="btn btn-sm btn-outline-warning" target="_blank">
-                    <i class="fas fa-external-link-alt me-1"></i>arXiv
-                  </a>
-                  <a href="https://data.mendeley.com/datasets/mk36vt2nzj/1" class="btn btn-sm btn-outline-info" target="_blank">
-                    <i class="fas fa-database me-1"></i>Dataset
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Under Review 2: DeepColonLab -->
-        <div class="card mb-4 border-0 shadow-sm bg-body-secondary">
-          <div class="card-body">
-            <div class="row">
-              <div class="col-md-10">
-                <h5 class="card-title mb-2">DeepColonLab: Attention Guided Separable Receptive Field Block Enhanced Deeplabv3+ Model for Colon Polyp Segmentation</h5>
-                <p class="card-text text-primary mb-2">
-                  <strong>Authors:</strong> Abduz Zami, <strong>Shadman Sobhan</strong> et al.
-                </p>
-                <p class="card-text text-secondary mb-2">
-                  <strong>Status:</strong> Preprint (preprints.org)
-                </p>
-                <p class="card-text">
-                  DeepLabV3+ is a well-established semantic segmentation architecture, but its application to 
-                  colon polyp segmentation is limited by its inability to model fine-grained local boundary 
-                  information crucial for irregular polyp shapes. This paper introduces DeepColonLab, which 
-                  enhances DeepLabV3+ with an Attention-Guided Separable Receptive Field Block that selectively 
-                  focuses the network on polyp boundary regions at multiple scales.
-                </p>
-                <p class="card-text">
-                  The separable receptive field design reduces computational overhead while expanding the 
-                  effective context window, and the attention guidance ensures that boundary-critical features 
-                  are amplified throughout the encoding process. Evaluated on standard polyp segmentation 
-                  benchmarks, DeepColonLab demonstrates improved Dice scores and boundary accuracy compared to 
-                  the vanilla DeepLabV3+ baseline and competitive lightweight alternatives.
-                </p>
-                <div class="d-flex flex-wrap gap-2 mt-3">
-                  <span class="badge bg-info">Under Review</span>
-                  <span class="badge bg-secondary">Medical Imaging</span>
-                  <span class="badge bg-secondary">Attention Mechanism</span>
-                  <span class="badge bg-secondary">DeepLab</span>
-                  <span class="badge bg-secondary">Polyp Segmentation</span>
-                </div>
-              </div>
-              <div class="col-md-2 text-md-end mt-3 mt-md-0">
-                <div class="mb-2">
-                  <span class="badge bg-info fs-6">preprints.org</span>
-                </div>
-                <div class="d-flex flex-column gap-2">
-                  <a href="https://www.preprints.org/manuscript/202506.0380/v1" class="btn btn-sm btn-outline-info" target="_blank">
-                    <i class="fas fa-external-link-alt me-1"></i>Preprint
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
